@@ -1,0 +1,14 @@
+{
+  "name": "buildforce-agentic-ops",
+  "version": "1.1.2",
+  "description": "Technical-consulting & orchestration MCP for the end-to-end back-end of Salesforce, ServiceNow & HubSpot: assess health, remediate findings, architect solutions, and orchestrate deployments through the capability-gated, sandbox-first Buildforce connector.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "buildforce": {
+      "httpUrl": "https://mcp.buildforce.io/mcp",
+      "oauth": {
+        "authorizationServer": "https://mcp.buildforce.io/.well-known/oauth-authorization-server"
+      }
+    }
+  }
+}

@@ -33,6 +33,14 @@ Settings → Connectors → **Add connector** → `https://mcp.buildforce.io/mcp
 
 ### Gemini CLI
 
+Install as an extension (bundles the consultant context + OAuth config):
+
+```bash
+gemini extensions install https://github.com/SparkSMB-Tim/buildforce-mcp
+```
+
+Or add the raw MCP server:
+
 ```bash
 gemini mcp add buildforce https://mcp.buildforce.io/mcp --transport http
 ```
