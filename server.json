@@ -1,0 +1,42 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.buildforce/agentic-ops",
+  "description": "Orchestration & technical-consulting MCP for end-to-end Salesforce, ServiceNow & HubSpot back-end.",
+  "version": "1.1.1",
+  "websiteUrl": "https://buildforce.io",
+  "repository": {
+    "url": "https://github.com/SparkSMB-Tim/buildforce-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.buildforce.io/mcp",
+      "headers": []
+    }
+  ],
+  "_meta": {
+    "io.buildforce/auth": {
+      "type": "oauth2",
+      "authorization_server": "https://mcp.buildforce.io/.well-known/oauth-authorization-server"
+    },
+    "io.buildforce/category": "developer-tools, productivity, enterprise-operations",
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tool_count": 70,
+      "read_only_tools": 45,
+      "write_tools": 25,
+      "capabilities": [
+        "health-check",
+        "salesforce",
+        "data-cloud",
+        "agentforce",
+        "omnistudio",
+        "deployment",
+        "ci-cd-pipelines",
+        "servicenow",
+        "hubspot"
+      ],
+      "note": "Tools are capability-gated per org: a connected account sees only the tools for the platforms and sub-products it actually has. Write/deploy tools route through a sandbox-first safety model with explicit production confirmation."
+    }
+  }
+}
